@@ -100,12 +100,14 @@
     <File Name="FramePrincipal.fbp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="include">
+    <File Name="ThreadImpression.h"/>
     <File Name="PorteurCodeBarres.h"/>
     <File Name="MyApp.h"/>
     <File Name="FramePrincipal.h"/>
     <File Name="EvtFramePrincipal.h"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
+    <File Name="ThreadImpression.cpp"/>
     <File Name="PorteurCodeBarres.cpp"/>
     <File Name="MyApp.cpp"/>
     <File Name="FramePrincipal.cpp"/>

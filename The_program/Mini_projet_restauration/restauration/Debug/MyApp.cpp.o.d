@@ -81,7 +81,53 @@ Debug/MyApp.cpp.o: MyApp.cpp MyApp.h /usr/include/wx-3.0/wx/app.h \
  /usr/include/wx-3.0/wx/weakref.h /usr/include/wx-3.0/wx/meta/int2type.h \
  /usr/include/wx-3.0/wx/gtk/toplevel.h /usr/include/wx-3.0/wx/statusbr.h \
  /usr/include/wx-3.0/wx/generic/statusbr.h /usr/include/wx-3.0/wx/pen.h \
- /usr/include/wx-3.0/wx/gtk/pen.h /usr/include/wx-3.0/wx/gtk/frame.h
+ /usr/include/wx-3.0/wx/gtk/pen.h /usr/include/wx-3.0/wx/gtk/frame.h \
+ CommunicationThread.h PorteurCodeBarres.h /usr/include/wx-3.0/wx/wx.h \
+ /usr/include/wx-3.0/wx/hash.h /usr/include/wx-3.0/wx/stopwatch.h \
+ /usr/include/wx-3.0/wx/time.h /usr/include/wx-3.0/wx/timer.h \
+ /usr/include/wx-3.0/wx/module.h /usr/include/wx-3.0/wx/panel.h \
+ /usr/include/wx-3.0/wx/generic/panelg.h /usr/include/wx-3.0/wx/dc.h \
+ /usr/include/wx-3.0/wx/brush.h /usr/include/wx-3.0/wx/gtk/brush.h \
+ /usr/include/wx-3.0/wx/affinematrix2d.h \
+ /usr/include/wx-3.0/wx/affinematrix2dbase.h \
+ /usr/include/wx-3.0/wx/geometry.h /usr/include/wx-3.0/wx/dcclient.h \
+ /usr/include/wx-3.0/wx/dcmemory.h /usr/include/wx-3.0/wx/dcprint.h \
+ /usr/include/wx-3.0/wx/dcscreen.h /usr/include/wx-3.0/wx/menuitem.h \
+ /usr/include/wx-3.0/wx/gtk/menuitem.h /usr/include/wx-3.0/wx/menu.h \
+ /usr/include/wx-3.0/wx/gtk/menu.h /usr/include/wx-3.0/wx/dialog.h \
+ /usr/include/wx-3.0/wx/sharedptr.h /usr/include/wx-3.0/wx/atomic.h \
+ /usr/include/wx-3.0/wx/gtk/dialog.h /usr/include/wx-3.0/wx/msgdlg.h \
+ /usr/include/wx-3.0/wx/stockitem.h \
+ /usr/include/wx-3.0/wx/generic/msgdlgg.h \
+ /usr/include/wx-3.0/wx/gtk/msgdlg.h /usr/include/wx-3.0/wx/dataobj.h \
+ /usr/include/wx-3.0/wx/gtk/dataform.h \
+ /usr/include/wx-3.0/wx/gtk/dataobj.h \
+ /usr/include/wx-3.0/wx/gtk/dataobj2.h /usr/include/wx-3.0/wx/ctrlsub.h \
+ /usr/include/wx-3.0/wx/bmpbuttn.h /usr/include/wx-3.0/wx/gtk/bmpbuttn.h \
+ /usr/include/wx-3.0/wx/checkbox.h /usr/include/wx-3.0/wx/gtk/checkbox.h \
+ /usr/include/wx-3.0/wx/checklst.h /usr/include/wx-3.0/wx/listbox.h \
+ /usr/include/wx-3.0/wx/gtk/listbox.h \
+ /usr/include/wx-3.0/wx/gtk/checklst.h /usr/include/wx-3.0/wx/choice.h \
+ /usr/include/wx-3.0/wx/gtk/choice.h /usr/include/wx-3.0/wx/scrolbar.h \
+ /usr/include/wx-3.0/wx/gtk/scrolbar.h /usr/include/wx-3.0/wx/stattext.h \
+ /usr/include/wx-3.0/wx/gtk/stattext.h /usr/include/wx-3.0/wx/statbmp.h \
+ /usr/include/wx-3.0/wx/gtk/statbmp.h /usr/include/wx-3.0/wx/radiobox.h \
+ /usr/include/wx-3.0/wx/gtk/radiobox.h /usr/include/wx-3.0/wx/radiobut.h \
+ /usr/include/wx-3.0/wx/gtk/radiobut.h /usr/include/wx-3.0/wx/slider.h \
+ /usr/include/wx-3.0/wx/gtk/slider.h /usr/include/wx-3.0/wx/gauge.h \
+ /usr/include/wx-3.0/wx/gtk/gauge.h /usr/include/wx-3.0/wx/scrolwin.h \
+ /usr/include/wx-3.0/wx/gtk/scrolwin.h /usr/include/wx-3.0/wx/dirdlg.h \
+ /usr/include/wx-3.0/wx/gtk/dirdlg.h /usr/include/wx-3.0/wx/toolbar.h \
+ /usr/include/wx-3.0/wx/tbarbase.h /usr/include/wx-3.0/wx/gtk/toolbar.h \
+ /usr/include/wx-3.0/wx/combobox.h /usr/include/wx-3.0/wx/gtk/combobox.h \
+ /usr/include/wx-3.0/wx/layout.h /usr/include/wx-3.0/wx/choicdlg.h \
+ /usr/include/wx-3.0/wx/generic/choicdgg.h \
+ /usr/include/wx-3.0/wx/textdlg.h \
+ /usr/include/wx-3.0/wx/generic/textdlgg.h \
+ /usr/include/wx-3.0/wx/valtext.h /usr/include/wx-3.0/wx/filedlg.h \
+ /usr/include/wx-3.0/wx/gtk/filedlg.h \
+ /usr/include/wx-3.0/wx/gtk/filectrl.h /usr/include/wx-3.0/wx/filectrl.h \
+ /usr/include/wx-3.0/wx/mdi.h /usr/include/wx-3.0/wx/gtk/mdi.h
 MyApp.h:
 /usr/include/wx-3.0/wx/app.h:
 /usr/include/wx-3.0/wx/event.h:
@@ -238,3 +284,85 @@ FramePrincipal.h:
 /usr/include/wx-3.0/wx/pen.h:
 /usr/include/wx-3.0/wx/gtk/pen.h:
 /usr/include/wx-3.0/wx/gtk/frame.h:
+CommunicationThread.h:
+PorteurCodeBarres.h:
+/usr/include/wx-3.0/wx/wx.h:
+/usr/include/wx-3.0/wx/hash.h:
+/usr/include/wx-3.0/wx/stopwatch.h:
+/usr/include/wx-3.0/wx/time.h:
+/usr/include/wx-3.0/wx/timer.h:
+/usr/include/wx-3.0/wx/module.h:
+/usr/include/wx-3.0/wx/panel.h:
+/usr/include/wx-3.0/wx/generic/panelg.h:
+/usr/include/wx-3.0/wx/dc.h:
+/usr/include/wx-3.0/wx/brush.h:
+/usr/include/wx-3.0/wx/gtk/brush.h:
+/usr/include/wx-3.0/wx/affinematrix2d.h:
+/usr/include/wx-3.0/wx/affinematrix2dbase.h:
+/usr/include/wx-3.0/wx/geometry.h:
+/usr/include/wx-3.0/wx/dcclient.h:
+/usr/include/wx-3.0/wx/dcmemory.h:
+/usr/include/wx-3.0/wx/dcprint.h:
+/usr/include/wx-3.0/wx/dcscreen.h:
+/usr/include/wx-3.0/wx/menuitem.h:
+/usr/include/wx-3.0/wx/gtk/menuitem.h:
+/usr/include/wx-3.0/wx/menu.h:
+/usr/include/wx-3.0/wx/gtk/menu.h:
+/usr/include/wx-3.0/wx/dialog.h:
+/usr/include/wx-3.0/wx/sharedptr.h:
+/usr/include/wx-3.0/wx/atomic.h:
+/usr/include/wx-3.0/wx/gtk/dialog.h:
+/usr/include/wx-3.0/wx/msgdlg.h:
+/usr/include/wx-3.0/wx/stockitem.h:
+/usr/include/wx-3.0/wx/generic/msgdlgg.h:
+/usr/include/wx-3.0/wx/gtk/msgdlg.h:
+/usr/include/wx-3.0/wx/dataobj.h:
+/usr/include/wx-3.0/wx/gtk/dataform.h:
+/usr/include/wx-3.0/wx/gtk/dataobj.h:
+/usr/include/wx-3.0/wx/gtk/dataobj2.h:
+/usr/include/wx-3.0/wx/ctrlsub.h:
+/usr/include/wx-3.0/wx/bmpbuttn.h:
+/usr/include/wx-3.0/wx/gtk/bmpbuttn.h:
+/usr/include/wx-3.0/wx/checkbox.h:
+/usr/include/wx-3.0/wx/gtk/checkbox.h:
+/usr/include/wx-3.0/wx/checklst.h:
+/usr/include/wx-3.0/wx/listbox.h:
+/usr/include/wx-3.0/wx/gtk/listbox.h:
+/usr/include/wx-3.0/wx/gtk/checklst.h:
+/usr/include/wx-3.0/wx/choice.h:
+/usr/include/wx-3.0/wx/gtk/choice.h:
+/usr/include/wx-3.0/wx/scrolbar.h:
+/usr/include/wx-3.0/wx/gtk/scrolbar.h:
+/usr/include/wx-3.0/wx/stattext.h:
+/usr/include/wx-3.0/wx/gtk/stattext.h:
+/usr/include/wx-3.0/wx/statbmp.h:
+/usr/include/wx-3.0/wx/gtk/statbmp.h:
+/usr/include/wx-3.0/wx/radiobox.h:
+/usr/include/wx-3.0/wx/gtk/radiobox.h:
+/usr/include/wx-3.0/wx/radiobut.h:
+/usr/include/wx-3.0/wx/gtk/radiobut.h:
+/usr/include/wx-3.0/wx/slider.h:
+/usr/include/wx-3.0/wx/gtk/slider.h:
+/usr/include/wx-3.0/wx/gauge.h:
+/usr/include/wx-3.0/wx/gtk/gauge.h:
+/usr/include/wx-3.0/wx/scrolwin.h:
+/usr/include/wx-3.0/wx/gtk/scrolwin.h:
+/usr/include/wx-3.0/wx/dirdlg.h:
+/usr/include/wx-3.0/wx/gtk/dirdlg.h:
+/usr/include/wx-3.0/wx/toolbar.h:
+/usr/include/wx-3.0/wx/tbarbase.h:
+/usr/include/wx-3.0/wx/gtk/toolbar.h:
+/usr/include/wx-3.0/wx/combobox.h:
+/usr/include/wx-3.0/wx/gtk/combobox.h:
+/usr/include/wx-3.0/wx/layout.h:
+/usr/include/wx-3.0/wx/choicdlg.h:
+/usr/include/wx-3.0/wx/generic/choicdgg.h:
+/usr/include/wx-3.0/wx/textdlg.h:
+/usr/include/wx-3.0/wx/generic/textdlgg.h:
+/usr/include/wx-3.0/wx/valtext.h:
+/usr/include/wx-3.0/wx/filedlg.h:
+/usr/include/wx-3.0/wx/gtk/filedlg.h:
+/usr/include/wx-3.0/wx/gtk/filectrl.h:
+/usr/include/wx-3.0/wx/filectrl.h:
+/usr/include/wx-3.0/wx/mdi.h:
+/usr/include/wx-3.0/wx/gtk/mdi.h:

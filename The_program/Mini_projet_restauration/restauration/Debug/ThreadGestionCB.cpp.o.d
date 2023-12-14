@@ -1,5 +1,5 @@
-Debug/EvtFramePrincipal.cpp.o: EvtFramePrincipal.cpp EvtFramePrincipal.h \
- FramePrincipal.h /usr/include/wx-3.0/wx/artprov.h \
+Debug/ThreadGestionCB.cpp.o: ThreadGestionCB.cpp ThreadGestionCB.h \
+ EvtFramePrincipal.h FramePrincipal.h /usr/include/wx-3.0/wx/artprov.h \
  /usr/include/wx-3.0/wx/string.h /usr/include/wx-3.0/wx/defs.h \
  /usr/include/wx-3.0/wx/platform.h /usr/include/wx-3.0/wx/compiler.h \
  /usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0/wx/setup.h \
@@ -129,8 +129,8 @@ Debug/EvtFramePrincipal.cpp.o: EvtFramePrincipal.cpp EvtFramePrincipal.h \
  /usr/include/wx-3.0/wx/valtext.h /usr/include/wx-3.0/wx/filedlg.h \
  /usr/include/wx-3.0/wx/gtk/filedlg.h \
  /usr/include/wx-3.0/wx/gtk/filectrl.h /usr/include/wx-3.0/wx/filectrl.h \
- /usr/include/wx-3.0/wx/mdi.h /usr/include/wx-3.0/wx/gtk/mdi.h \
- ThreadAcquisitionCB.h
+ /usr/include/wx-3.0/wx/mdi.h /usr/include/wx-3.0/wx/gtk/mdi.h
+ThreadGestionCB.h:
 EvtFramePrincipal.h:
 FramePrincipal.h:
 /usr/include/wx-3.0/wx/artprov.h:
@@ -368,4 +368,3 @@ PorteurCodeBarres.h:
 /usr/include/wx-3.0/wx/filectrl.h:
 /usr/include/wx-3.0/wx/mdi.h:
 /usr/include/wx-3.0/wx/gtk/mdi.h:
-ThreadAcquisitionCB.h:

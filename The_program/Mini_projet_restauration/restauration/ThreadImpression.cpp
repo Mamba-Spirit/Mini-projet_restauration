@@ -12,3 +12,23 @@ ThreadImpression::~ThreadImpression()
 {
 }
 
+void ThreadImpression::OnExit()
+{
+    m_imprimante.close();
+    std::cout << "fin du thread d'impression"<<std::endl;
+}
+
+void *ThreadImpression::Entry()
+{
+    bool fin=false;
+
+    while (!fin || !m_ct_traitementPCB_impression_Ptr->FileVide())
+    {
+        PorteurCodeBarres pcb=m_ct_traitementPCB_impression_Ptr->RecupereDansFile();
+        if  (pcb.FinDemandee())
+            fin=true;
+        else if (!pcb.EstScolaire())
+            m_imprimante<<"passage d'un non scolaire"<<endl;
+    }
+    return NULL;
+}

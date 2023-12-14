@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Sep 14 2021)
+// C++ code generated with wxFormBuilder (version 3.9.0 Jan 12 2022)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -38,8 +38,16 @@ class FramePrincipal : public wxFrame
 		wxButton* m_button_passage_scolaire;
 		wxButton* m_button_passage_inconnu;
 		wxButton* m_button_pass;
-		wxTextCtrl* m_textCtrl2;
+		wxTextCtrl* m_textCtrlLog;
 		wxButton* m_button_demande_fin;
+
+		// Virtual event handlers, override them in your derived class
+		virtual void OnClose_Click( wxCloseEvent& event ) { event.Skip(); }
+		virtual void OnButton_passage_non_scolaire_Click( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnButton_passage_scolaire_Click( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnButton_passage_inconnu_Click( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnButton_pass_Click( wxCommandEvent& event ) { event.Skip(); }
+
 
 	public:
 

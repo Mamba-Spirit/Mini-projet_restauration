@@ -57,6 +57,7 @@
             <property name="window_name"></property>
             <property name="window_style">wxTAB_TRAVERSAL</property>
             <property name="xrc_skip_sizer">1</property>
+            <event name="OnClose">OnClose_Click</event>
             <object class="wxBoxSizer" expanded="1">
                 <property name="minimum_size"></property>
                 <property name="name">bSizerPrincipal</property>
@@ -145,6 +146,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnButtonClick">OnButton_passage_non_scolaire_Click</event>
                             </object>
                         </object>
                         <object class="sizeritem" expanded="0">
@@ -218,6 +220,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnButtonClick">OnButton_passage_scolaire_Click</event>
                             </object>
                         </object>
                         <object class="sizeritem" expanded="0">
@@ -291,6 +294,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnButtonClick">OnButton_passage_inconnu_Click</event>
                             </object>
                         </object>
                         <object class="sizeritem" expanded="0">
@@ -364,6 +368,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnButtonClick">OnButton_pass_Click</event>
                             </object>
                         </object>
                     </object>
@@ -417,7 +422,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl2</property>
+                                <property name="name">m_textCtrlLog</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>

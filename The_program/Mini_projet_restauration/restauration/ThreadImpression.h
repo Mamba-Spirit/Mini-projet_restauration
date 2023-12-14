@@ -17,7 +17,7 @@ public:
     virtual void OnExit();
     
 private:
-    CommunicationThread *m_ct_traitementPCB_impression_tr;
+    CommunicationThread *m_ct_traitementPCB_impression_Ptr;
     ofstream m_imprimante;
 };
 

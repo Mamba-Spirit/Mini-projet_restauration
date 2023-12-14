@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Sep 14 2021)
+// C++ code generated with wxFormBuilder (version 3.9.0 Jan 12 2022)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -37,8 +37,8 @@ FramePrincipal::FramePrincipal( wxWindow* parent, wxWindowID id, const wxString&
 	wxBoxSizer* bSizer7;
 	bSizer7 = new wxBoxSizer( wxVERTICAL );
 
-	m_textCtrl2 = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxHSCROLL|wxTE_MULTILINE|wxTE_READONLY );
-	bSizer7->Add( m_textCtrl2, 1, wxALL|wxEXPAND, 5 );
+	m_textCtrlLog = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxHSCROLL|wxTE_MULTILINE|wxTE_READONLY );
+	bSizer7->Add( m_textCtrlLog, 1, wxALL|wxEXPAND, 5 );
 
 
 	bSizerPrincipal->Add( bSizer7, 1, wxEXPAND, 5 );
@@ -57,8 +57,22 @@ FramePrincipal::FramePrincipal( wxWindow* parent, wxWindowID id, const wxString&
 	this->Layout();
 
 	this->Centre( wxBOTH );
+
+	// Connect Events
+	this->Connect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( FramePrincipal::OnClose_Click ) );
+	m_button_passage_non_scolaire->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_non_scolaire_Click ), NULL, this );
+	m_button_passage_scolaire->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_scolaire_Click ), NULL, this );
+	m_button_passage_inconnu->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_inconnu_Click ), NULL, this );
+	m_button_pass->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_pass_Click ), NULL, this );
 }
 
 FramePrincipal::~FramePrincipal()
 {
+	// Disconnect Events
+	this->Disconnect( wxEVT_CLOSE_WINDOW, wxCloseEventHandler( FramePrincipal::OnClose_Click ) );
+	m_button_passage_non_scolaire->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_non_scolaire_Click ), NULL, this );
+	m_button_passage_scolaire->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_scolaire_Click ), NULL, this );
+	m_button_passage_inconnu->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_inconnu_Click ), NULL, this );
+	m_button_pass->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_pass_Click ), NULL, this );
+
 }

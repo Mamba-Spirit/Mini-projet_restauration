@@ -9,7 +9,7 @@
 class ThreadGestionCB : public wxThread
 {
 public:
-    ThreadGestionCB(EvtFramePrincipal* frame, CommunicationThread* commThread, CommunicationThread* commThread_impression);
+    ThreadGestionCB(EvtFramePrincipal *frame, CommunicationThread *commThread, CommunicationThread *commThread_impression);
     ~ThreadGestionCB();
     virtual void* Entry();
     virtual void OnExit();

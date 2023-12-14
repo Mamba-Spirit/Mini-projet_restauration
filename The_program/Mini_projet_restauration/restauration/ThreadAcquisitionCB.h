@@ -10,6 +10,8 @@
 class ThreadAcquisitionCB : public wxThread
 {
 public:
+
+    ThreadAcquisitionCB();
     ThreadAcquisitionCB(EvtFramePrincipal *frame, CommunicationThread *commThread);
     ~ThreadAcquisitionCB();
     

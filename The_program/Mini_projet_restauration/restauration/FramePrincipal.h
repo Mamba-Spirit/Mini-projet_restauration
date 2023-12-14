@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Jan 12 2022)
+// C++ code generated with wxFormBuilder (version 3.9.0 Sep 14 2021)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -47,6 +47,7 @@ class FramePrincipal : public wxFrame
 		virtual void OnButton_passage_scolaire_Click( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnButton_passage_inconnu_Click( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnButton_pass_Click( wxCommandEvent& event ) { event.Skip(); }
+		virtual void OnButton_demande_fin_Click( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:

@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Jan 12 2022)
+// C++ code generated with wxFormBuilder (version 3.9.0 Sep 14 2021)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -64,6 +64,7 @@ FramePrincipal::FramePrincipal( wxWindow* parent, wxWindowID id, const wxString&
 	m_button_passage_scolaire->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_scolaire_Click ), NULL, this );
 	m_button_passage_inconnu->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_inconnu_Click ), NULL, this );
 	m_button_pass->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_pass_Click ), NULL, this );
+	m_button_demande_fin->Connect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_demande_fin_Click ), NULL, this );
 }
 
 FramePrincipal::~FramePrincipal()
@@ -74,5 +75,6 @@ FramePrincipal::~FramePrincipal()
 	m_button_passage_scolaire->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_scolaire_Click ), NULL, this );
 	m_button_passage_inconnu->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_passage_inconnu_Click ), NULL, this );
 	m_button_pass->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_pass_Click ), NULL, this );
+	m_button_demande_fin->Disconnect( wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler( FramePrincipal::OnButton_demande_fin_Click ), NULL, this );
 
 }

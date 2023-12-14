@@ -2,7 +2,12 @@
 #include <cstdlib>
 #include <ctime>
 
-ThreadAcquisitionCB::ThreadAcquisitionCB(EvtFramePrincipal* frame, CommunicationThread* commThread): wxThread(wxTHREAD_DETACHED)
+
+ThreadAcquisitionCB::ThreadAcquisitionCB(){
+    
+}
+
+ThreadAcquisitionCB::ThreadAcquisitionCB(EvtFramePrincipal *frame, CommunicationThread* commThread): wxThread(wxTHREAD_DETACHED)
 {
     m_frame = frame;
     m_commThread = commThread;
@@ -30,9 +35,9 @@ void* ThreadAcquisitionCB::Entry() {
     while (!m_fin_demandee) {
         
         PorteurCodeBarres pcb;
-        int randomCode = rand()% 900000 + 100000;
+        int randomCode = rand()% 4+ 1;
         
-        if((randomCode % 8) == 0){
+        if(randomCode){
             pcb.SetValide(true);
         }
         else{

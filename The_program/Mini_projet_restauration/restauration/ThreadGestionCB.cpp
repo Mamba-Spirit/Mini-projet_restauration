@@ -1,5 +1,6 @@
 #include "ThreadGestionCB.h"
 
+
 ThreadGestionCB::ThreadGestionCB(EvtFramePrincipal* frame, CommunicationThread* commThread, CommunicationThread* commThread_impression) : wxThread(wxTHREAD_DETACHED)
 {
     m_frame = frame;
@@ -36,7 +37,8 @@ void* ThreadGestionCB::Entry() {
 
         // Ajouter votre logique de gestion des codes-barres ici
         
-        m_commThread_impression->MetDansFile(pcb);
+        //m_commThread_impression
+        m_commThread->MetDansFile(pcb);
         // Pause pour simuler le traitement
         wxMilliSleep(500);
     }

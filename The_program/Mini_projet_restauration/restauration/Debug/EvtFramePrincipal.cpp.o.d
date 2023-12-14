@@ -130,7 +130,7 @@ Debug/EvtFramePrincipal.cpp.o: EvtFramePrincipal.cpp EvtFramePrincipal.h \
  /usr/include/wx-3.0/wx/gtk/filedlg.h \
  /usr/include/wx-3.0/wx/gtk/filectrl.h /usr/include/wx-3.0/wx/filectrl.h \
  /usr/include/wx-3.0/wx/mdi.h /usr/include/wx-3.0/wx/gtk/mdi.h \
- ThreadAcquisitionCB.h
+ ThreadAcquisitionCB.h ThreadGestionCB.h ThreadImpression.h
 EvtFramePrincipal.h:
 FramePrincipal.h:
 /usr/include/wx-3.0/wx/artprov.h:
@@ -369,3 +369,5 @@ PorteurCodeBarres.h:
 /usr/include/wx-3.0/wx/mdi.h:
 /usr/include/wx-3.0/wx/gtk/mdi.h:
 ThreadAcquisitionCB.h:
+ThreadGestionCB.h:
+ThreadImpression.h:

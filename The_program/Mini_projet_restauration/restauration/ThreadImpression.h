@@ -4,7 +4,12 @@
 #include <wx/wx.h>
 #include "CommunicationThread.h"
 #include <fstream>
-using namespace std;
+//using namespace std;
+using std::ofstream;
+using std::endl;
+using std::ios;
+using std::cerr;
+using std::ostringstream;
 
 
 class ThreadImpression : public wxThread

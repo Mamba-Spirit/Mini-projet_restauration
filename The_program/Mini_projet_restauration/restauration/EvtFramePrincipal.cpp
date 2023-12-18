@@ -1,7 +1,7 @@
 #include "EvtFramePrincipal.h"
 #include "ThreadAcquisitionCB.h"
 #include "ThreadGestionCB.h"
-#include "ThreadImpression.h" 
+#include "ThreadImpression.h"
 
 EvtFramePrincipal::EvtFramePrincipal( wxWindow* parent )
 :
@@ -37,15 +37,15 @@ FramePrincipal( parent )
     else{
         m_thread_Gestion->Run();
     }
-    
-    m_thread_Impression = new ThreadImpression(m_communication_impression);
-    
+
+  /*  m_thread_Impression = new ThreadImpression(m_communication_impression);
+
     if(m_thread_Impression->Create() != wxTHREAD_NO_ERROR){
         wxLogError("Création du thread impression impossible!");
     }
     else{
         m_thread_Impression->Run();
-    }
+    }*/
 
 }
 
@@ -58,13 +58,14 @@ Destroy();
 }
 else
 {
-m_textCtrlLog->AppendText("To stop the programme, click on the button Demande FIN ou attendez que le consommateur ait fini\n");
+//m_textCtrlLog->AppendText("To stop the programme, click on the button Demande FIN ou attendez que le consommateur ait fini\n");
 }
 }
 
 void EvtFramePrincipal::OnButton_passage_non_scolaire_Click( wxCommandEvent& event )
 {
 // TODO: Implement OnButton_passage_non_scolaire_Click
+
 }
 
 void EvtFramePrincipal::OnButton_passage_scolaire_Click( wxCommandEvent& event )
@@ -85,10 +86,12 @@ void EvtFramePrincipal::OnButton_pass_Click( wxCommandEvent& event )
 void EvtFramePrincipal::OnButton_demande_fin_Click( wxCommandEvent& event )
 {
 // TODO: Implement OnButton_demande_fin_Click
-    m_thread_Acquisition->Delete();
-    m_thread_Gestion->Delete();
-    m_thread_Impression->Delete();
-    m_button_demande_fin->Hide();
+	
+m_thread_Acquisition->Delete();
+m_thread_Gestion->Delete();
+m_thread_Impression->Delete();
+m_button_demande_fin->Hide();
+
 }
 
 
@@ -99,6 +102,8 @@ void EvtFramePrincipal::OnThread_Gestion_Event(wxCommandEvent& event)
          m_Thread_Gestioncbfini = true;
          Disconnect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(EvtFramePrincipal::OnThread_Gestion_Event));
     }
+	else
+		m_textCtrlLog->AppendText(event.GetString());
 }
 
 void EvtFramePrincipal::OnThread_Acquisition_Event(wxCommandEvent& event)
@@ -109,6 +114,8 @@ void EvtFramePrincipal::OnThread_Acquisition_Event(wxCommandEvent& event)
         m_Thread_AcquisitioncbFini= true;
         Disconnect( wxEVT_COMMAND_BUTTON_CLICKED,wxCommandEventHandler( EvtFramePrincipal::OnThread_Acquisition_Event));
     }
+	else
+		m_textCtrlLog->AppendText(event.GetString());
 }
 
 void EvtFramePrincipal::OnThread_Impression_Event(wxCommandEvent& event)
@@ -119,4 +126,5 @@ void EvtFramePrincipal::OnThread_Impression_Event(wxCommandEvent& event)
         m_Thread_Impressionfini = true;
         Disconnect(wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(EvtFramePrincipal::OnThread_Impression_Event));
     }
+
 }

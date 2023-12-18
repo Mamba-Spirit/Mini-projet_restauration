@@ -1,1 +1,1 @@
-Debug/EvtFramePrincipal.cpp.o Debug/FramePrincipal.cpp.o Debug/PorteurCodeBarres.cpp.o Debug/ThreadImpression.cpp.o Debug/MyApp.cpp.o Debug/ThreadGestionCB.cpp.o Debug/ThreadAcquisitionCB.cpp.o Debug/CommunicationThread.cpp.o
+Debug/MyApp.cpp.o Debug/PorteurCodeBarres.cpp.o Debug/ThreadGestionCB.cpp.o Debug/ThreadImpression.cpp.o Debug/ThreadAcquisitionCB.cpp.o Debug/EvtFramePrincipal.cpp.o Debug/FramePrincipal.cpp.o Debug/CommunicationThread.cpp.o

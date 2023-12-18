@@ -45,6 +45,7 @@ private:
     ThreadAcquisitionCB *m_thread_Acquisition;
     ThreadGestionCB *m_thread_Gestion;
     ThreadImpression *m_thread_Impression;
+	PorteurCodeBarres *m_pcb = new PorteurCodeBarres;
 
     void OnThread_Acquisition_Event(wxCommandEvent& event);
     void OnThread_Gestion_Event(wxCommandEvent& event);
